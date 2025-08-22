@@ -27,14 +27,12 @@
                  radial-gradient(900px 600px at -10% 25%, rgba(20,30,60,.35), transparent);
     }
     body{font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial}
-    /* léger bruit pour la profondeur */
     .noise::after{
       content:"";position:absolute;inset:0;pointer-events:none;
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/ filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
     }
   </style>
 
-  <!-- SEO / Social -->
   <link rel="canonical" href="https://yllan76.github.io/Yllan-Graphisme/" />
   <link rel="icon" href="/favicon.ico" />
   <meta property="og:type" content="website" />
@@ -43,7 +41,6 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Schema.org -->
   <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"Organization",
@@ -55,7 +52,7 @@
 </head>
 
 <body class="bg-night-900 text-white selection:bg-night-500/40">
-  <!-- ===== NAV ===== -->
+  <!-- NAV -->
   <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-night-900/70 border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between">
@@ -89,349 +86,15 @@
   </header>
 
   <main>
-    <!-- ===== HERO ===== -->
+    <!-- HERO -->
     <section id="accueil" class="relative overflow-hidden noise">
-      <!-- background layers -->
       <div class="absolute inset-0" style="background:var(--bg-grad)"></div>
-      <!-- blobs -->
       <div class="absolute -top-24 -left-24 w-[36rem] h-[36rem] rounded-full bg-night-600/20 blur-3xl"></div>
       <div class="absolute -bottom-32 -right-16 w-[30rem] h-[30rem] rounded-full bg-night-400/20 blur-3xl"></div>
 
-      <!-- storyset décoratifs en arrière-plan -->
+      <!-- décor Storyset en arrière-plan -->
       <img src="assets/Team work-bro.png" alt="" class="pointer-events-none select-none opacity-15 blur-[1px] absolute top-12 right-8 w-60 hidden md:block">
       <img src="assets/Good team-pana.png" alt="" class="pointer-events-none select-none opacity-10 absolute bottom-10 left-6 w-56 hidden md:block">
       <img src="assets/Collab-bro.png" alt="" class="pointer-events-none select-none opacity-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-64 hidden lg:block">
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
-        <div class="grid lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Identité, contenus & site vitrine <span class="text-night-300">qui font vendre</span>
-            </h1>
-            <p class="mt-4 text-white/70 text-lg max-w-xl">
-              Branding clair, exécution rapide, rendu propre. Je conçois votre image pour attirer, convaincre et convertir.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-3">
-              <button data-open-order class="px-6 py-3 rounded-2xl bg-night-500 hover:bg-night-400 font-semibold shadow-glass">Démarrer mon projet</button>
-              <a href="#prestations" class="px-6 py-3 rounded-2xl bg-white/5 hover:bg-white/10">Voir les prestations</a>
-            </div>
-            <div class="mt-10 flex items-center gap-6 text-white/60">
-              <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span> Délais rapides</div>
-              <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-sky-400"></span> 100% droits d’utilisation pro</div>
-            </div>
-          </div>
-          <div class="relative">
-            <!-- visuel discret pour la colonne droite -->
-            <img loading="lazy" class="w-full max-w-xl mx-auto drop-shadow-2xl rounded-3xl border border-white/10 bg-white/5"
-                 alt="Promotion mobile" src="assets/Mobile Marketing-bro.png"/>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PRÉSENTATION ===== -->
-    <section id="presentation" class="py-20 border-t border-white/5">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-3 gap-10 items-start">
-          <div class="lg:col-span-2 space-y-6">
-            <h2 class="text-3xl font-bold">Présentation</h2>
-
-            <p class="text-white/70 leading-relaxed">
-              Je suis <strong>Yllan</strong>, graphiste spécialisé dans la création de visuels performants pour les marques qui souhaitent affirmer leur identité et se démarquer.
-            </p>
-            <p class="text-white/70 leading-relaxed">
-              Mon approche repose sur trois principes clés : <strong>clarté</strong>, <strong>professionnalisme</strong> et <strong>efficacité</strong>.
-              Chaque projet est pensé avec une vision stratégique : délivrer un design à la fois esthétique et fonctionnel, conçu pour mettre en valeur votre image de marque et atteindre vos objectifs de communication.
-            </p>
-            <p class="text-white/70 leading-relaxed">
-              Mon univers visuel s’inspire d’un <strong>style bleu nuit</strong> élégant, sobre et moderne, qui reflète la confiance et la crédibilité. J’accorde une attention particulière à la cohérence graphique et à l’impact visuel, afin que chaque élément soit porteur de sens et immédiatement reconnaissable.
-            </p>
-
-            <h3 class="font-semibold text-white/90 mt-6">Mes prestations incluent :</h3>
-            <ul class="grid sm:grid-cols-2 gap-4 text-white/80">
-              <li class="p-4 rounded-2xl bg-white/5 border border-white/10">Création de contenus optimisés pour Instagram (posts, stories, couvertures, mises en page).</li>
-              <li class="p-4 rounded-2xl bg-white/5 border border-white/10">Conception de bannières professionnelles pour vos supports digitaux.</li>
-              <li class="p-4 rounded-2xl bg-white/5 border border-white/10">Développement de mini-sites vitrines modernes et ergonomiques.</li>
-              <li class="p-4 rounded-2xl bg-white/5 border border-white/10">Mise en place de stratégies SEO (référencement naturel & local) pour gagner en visibilité.</li>
-            </ul>
-
-            <p class="text-white/70 leading-relaxed">
-              Je m’engage à livrer rapidement, avec une <strong>réactivité exemplaire</strong> et à un <strong>prix compétitif</strong>.
-              Mon objectif : des solutions prêtes à l’emploi, alignées sur votre identité, pour une communication visuelle et digitale <strong>cohérente, impactante et durable</strong>.
-            </p>
-          </div>
-
-          <!-- colonne visuelle : storyset espacés -->
-          <div class="space-y-6">
-            <img src="assets/Team work-bro.png" alt="Équipe" class="rounded-3xl border border-white/10 bg-white/5 p-2">
-            <img src="assets/Good team-pana.png" alt="Organisation" class="rounded-3xl border border-white/10 bg-white/5 p-2">
-            <img src="assets/Collab-bro.png" alt="Collaboration" class="rounded-3xl border border-white/10 bg-white/5 p-2">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PRESTATIONS / PRIX ===== -->
-    <section id="prestations" class="py-20 border-t border-white/5">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-end justify-between gap-4">
-          <div>
-            <h2 class="text-3xl font-bold">Prestations & tarifs</h2>
-            <p class="text-white/70 mt-2">Tu ajustes les prix quand tu veux. Les boutons ouvrent la commande avec le pack pré-sélectionné.</p>
-          </div>
-          <a href="#contact" class="hidden sm:inline text-night-300 hover:underline">Besoin d’un pack sur-mesure ?</a>
-        </div>
-
-        <div class="mt-8 grid md:grid-cols-3 gap-6">
-          <article class="p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition">
-            <h3 class="text-xl font-bold">Starter</h3>
-            <p class="text-white/60 mt-1">Pour se lancer proprement</p>
-            <p class="mt-4 text-4xl font-extrabold">149€</p>
-            <ul class="mt-4 space-y-2 text-white/70">
-              <li>✔️ Logo simple + variantes</li>
-              <li>✔️ Palette & typographies</li>
-              <li>✔️ 5 visuels Instagram</li>
-              <li>✔️ 1 bannière (site ou boutique)</li>
-              <li>— 2 allers-retours</li>
-            </ul>
-            <button data-open-order data-pack="Starter" class="mt-6 w-full px-4 py-3 rounded-xl bg-night-500 hover:bg-night-400 font-semibold">Commander Starter</button>
-          </article>
-
-          <article class="relative p-6 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-glass ring-1 ring-night-600/30">
-            <div class="absolute -top-3 right-6 text-xs px-2 py-1 rounded-full bg-night-500">Le + populaire</div>
-            <h3 class="text-xl font-bold">Pro</h3>
-            <p class="text-white/60 mt-1">Image de marque solide</p>
-            <p class="mt-4 text-4xl font-extrabold">349€</p>
-            <ul class="mt-4 space-y-2 text-white/70">
-              <li>✔️ Logo + charte rapide</li>
-              <li>✔️ 12 visuels Instagram</li>
-              <li>✔️ Bannières (site + boutique)</li>
-              <li>✔️ Kit Stories à la une</li>
-              <li>— 3 allers-retours</li>
-            </ul>
-            <button data-open-order data-pack="Pro" class="mt-6 w-full px-4 py-3 rounded-xl bg-night-500 hover:bg-night-400 font-semibold">Commander Pro</button>
-          </article>
-
-          <article class="p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition">
-            <h3 class="text-xl font-bold">Elite</h3>
-            <p class="text-white/60 mt-1">Tout ce qu'il faut pour performer</p>
-            <p class="mt-4 text-4xl font-extrabold">699€</p>
-            <ul class="mt-4 space-y-2 text-white/70">
-              <li>✔️ Identité complète (charte courte)</li>
-              <li>✔️ 24 visuels Instagram</li>
-              <li>✔️ Mini-site vitrine 1 page</li>
-              <li>✔️ Templates Canva modifiables</li>
-              <li>— 5 allers-retours</li>
-            </ul>
-            <button data-open-order data-pack="Elite" class="mt-6 w-full px-4 py-3 rounded-xl bg-night-500 hover:bg-night-400 font-semibold">Commander Elite</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FAQ ===== -->
-    <section id="faq" class="py-20 border-t border-white/5">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold">FAQ</h2>
-        <div class="mt-6 divide-y divide-white/10 rounded-3xl border border-white/10 overflow-hidden">
-          <details class="group open:bg-white/5">
-            <summary class="list-none cursor-pointer px-6 py-5 flex items-center justify-between">
-              <span class="font-semibold">Quels fichiers je reçois ?</span>
-              <svg class="transition group-open:rotate-180" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="white" stroke-width="1.6"/></svg>
-            </summary>
-            <div class="px-6 pb-6 text-white/70">PNG/JPG optimisés + PDF. Sur demande : Canva éditable ou Figma.</div>
-          </details>
-          <details class="group open:bg-white/5">
-            <summary class="list-none cursor-pointer px-6 py-5 flex items-center justify-between">
-              <span class="font-semibold">Délais et révisions</span>
-              <svg class="transition group-open:rotate-180" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="white" stroke-width="1.6"/></svg>
-            </summary>
-            <div class="px-6 pb-6 text-white/70">Livraison initiale sous 2–5 jours ouvrés selon le pack. Révisions incluses selon l'offre.</div>
-          </details>
-          <details class="group open:bg-white/5">
-            <summary class="list-none cursor-pointer px-6 py-5 flex items-center justify-between">
-              <span class="font-semibold">Modes de paiement</span>
-              <svg class="transition group-open:rotate-180" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="white" stroke-width="1.6"/></svg>
-            </summary>
-            <div class="px-6 pb-6 text-white/70">Virement, PayPal, Lydia. Acompte 30% possible pour les gros projets.</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="py-20 border-t border-white/5">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <h2 class="text-3xl font-bold">Contact & commande</h2>
-            <p class="text-white/70 mt-2">Dis-moi ce dont tu as besoin, je reviens vite avec la suite.</p>
-            <form id="orderForm" class="mt-6 space-y-4">
-              <div class="grid sm:grid-cols-2 gap-4">
-                <label class="block">Nom / Entreprise
-                  <input required name="name" class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none" placeholder="Ex: Yllan Graphismes">
-                </label>
-                <label class="block">Email
-                  <input required type="email" name="email" class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none" placeholder="nom@domaine.com">
-                </label>
-              </div>
-              <div class="grid sm:grid-cols-2 gap-4">
-                <label class="block">Pack souhaité
-                  <select name="pack" id="packSelect" class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none">
-                    <option value="Indécis">Indécis / sur mesure</option>
-                    <option>Starter</option>
-                    <option>Pro</option>
-                    <option>Elite</option>
-                  </select>
-                </label>
-                <label class="block">Budget indicatif
-                  <select name="budget" class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none">
-                    <option>—</option>
-                    <option>< 200€</option>
-                    <option>200–400€</option>
-                    <option>400–800€</option>
-                    <option>> 800€</option>
-                  </select>
-                </label>
-              </div>
-              <label class="block">Message
-                <textarea required name="message" rows="5" class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none" placeholder="Contexte, objectifs, exemples que tu aimes…"></textarea>
-              </label>
-              <div class="flex items-center justify-between gap-4">
-                <button type="submit" class="px-6 py-3 rounded-2xl bg-night-500 hover:bg-night-400 font-semibold">Envoyer la demande</button>
-                <p class="text-xs text-white/50">Astuce : mail prérempli — 0€ & immédiat.</p>
-              </div>
-            </form>
-          </div>
-          <div class="p-6 rounded-3xl bg-white/5 border border-white/10">
-            <h3 class="font-semibold">Infos direct</h3>
-            <ul class="mt-4 space-y-2 text-white/80">
-              <li>📧 <a class="underline" href="mailto:yllanganai.graphisme@gmail.com">yllanganai.graphisme@gmail.com</a></li>
-              <li>📱 Instagram : <a class="underline" href="https://instagram.com/yg.graphismes" target="_blank" rel="noopener">@yg.graphismes</a></li>
-              <li>📍 Le Havre — France</li>
-            </ul>
-            <p class="text-white/50 text-sm mt-6">Tu peux remplacer l’envoi par <strong>Formspree</strong> ou <strong>Netlify Forms</strong> (gratuit) si tu veux éviter le mailto.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-sm text-white/60">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div>
-          <p class="font-semibold text-white/80">Yllan Graphismes</p>
-          <p class="mt-2">Branding, contenus & mini-sites — propres, rapides, efficaces.</p>
-        </div>
-        <div>
-          <p class="font-semibold text-white/80">Liens</p>
-          <ul class="mt-2 space-y-1">
-            <li><a href="#presentation" class="hover:underline">Présentation</a></li>
-            <li><a href="#prestations" class="hover:underline">Prestations</a></li>
-            <li><a href="#faq" class="hover:underline">FAQ</a></li>
-            <li><a href="#contact" class="hover:underline">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="font-semibold text-white/80">Légal</p>
-          <p class="mt-2">Mentions légales & Politique de confidentialité :
-            <span class="text-white/50">SIREN, adresse, conditions…</span>
-          </p>
-          <p class="mt-2 text-xs">Illustrations : Storyset (mention requise) · Photos : Unsplash.</p>
-        </div>
-      </div>
-      <p class="mt-10 text-center text-white/40">© <span id="year"></span> Yllan Graphismes. Tous droits réservés.</p>
-    </div>
-  </footer>
-
-  <!-- ===== Modal Commander ===== -->
-  <dialog id="orderModal" class="backdrop:bg-black/70 rounded-3xl max-w-xl w-full p-0">
-    <div class="p-6 bg-night-900 border border-white/10 rounded-3xl">
-      <div class="flex items-center justify-between">
-        <h3 class="text-xl font-bold">Commander</h3>
-        <button data-close-order class="w-9 h-9 grid place-items-center rounded-xl hover:bg-white/10">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="white" stroke-width="1.6"/></svg>
-        </button>
-      </div>
-      <p class="text-white/70 mt-2">Tu peux aussi utiliser le formulaire contact.</p>
-      <form id="modalOrderForm" class="mt-4 space-y-4">
-        <label class="block">Pack
-          <select id="modalPack" class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none">
-            <option value="Indécis">Indécis / sur mesure</option>
-            <option>Starter</option>
-            <option>Pro</option>
-            <option>Elite</option>
-          </select>
-        </label>
-        <label class="block">Email
-          <input id="modalEmail" type="email" required class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none" placeholder="nom@domaine.com">
-        </label>
-        <label class="block">Message
-          <textarea id="modalMsg" rows="4" required class="mt-1 w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-night-400 outline-none" placeholder="Ex : logo + 10 visuels…"></textarea>
-        </label>
-        <div class="flex items-center justify-end gap-3">
-          <button type="button" data-close-order class="px-5 py-2 rounded-xl bg-white/10">Annuler</button>
-          <button type="submit" class="px-5 py-2 rounded-xl bg-night-500 hover:bg-night-400 font-semibold">Envoyer</button>
-        </div>
-      </form>
-      <p class="text-xs text-white/50 mt-3">Envoi via ton client mail (mailto) pour rester 100% gratuit.</p>
-    </div>
-  </dialog>
-
-  <script>
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-    // burger
-    const burger = document.getElementById('burger');
-    const mobileNav = document.getElementById('mobileNav');
-    burger?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
-
-    // modal
-    const orderModal = document.getElementById('orderModal');
-    const openBtns = document.querySelectorAll('[data-open-order]');
-    const closeBtns = document.querySelectorAll('[data-close-order]');
-    const modalPack = document.getElementById('modalPack');
-    openBtns.forEach(btn => btn.addEventListener('click', (e) => {
-      const pack = e.currentTarget.getAttribute('data-pack');
-      if (pack && modalPack) modalPack.value = pack;
-      orderModal.showModal();
-    }));
-    closeBtns.forEach(btn => btn.addEventListener('click', () => orderModal.close()));
-
-    function buildMailto({to, subject, body}){
-      const esc = s => encodeURIComponent(s).replace(/%0A/g, '\n');
-      return `mailto:${to}?subject=${esc(subject)}&body=${esc(body)}`;
-    }
-
-    const EMAIL_TO = 'yllanganai.graphisme@gmail.com';
-
-    document.getElementById('orderForm')?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const fd = new FormData(e.target);
-      const subject = `[Commande] ${fd.get('pack')} — ${fd.get('name')}`;
-      const body = `Nom/Entreprise: ${fd.get('name')}\nEmail: ${fd.get('email')}\nPack: ${fd.get('pack')}\nBudget: ${fd.get('budget')}\n\nMessage:\n${fd.get('message')}`;
-      window.location.href = buildMailto({to: EMAIL_TO, subject, body});
-    });
-
-    document.getElementById('modalOrderForm')?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const subject = `[Commande] ${modalPack.value} — ${document.getElementById('modalEmail').value}`;
-      const body = `Email: ${document.getElementById('modalEmail').value}\nPack: ${modalPack.value}\n\nMessage:\n${document.getElementById('modalMsg').value}`;
-      window.location.href = buildMailto({to: EMAIL_TO, subject, body});
-      orderModal.close();
-    });
-
-    // back to top
-    const toTop = document.createElement('button');
-    toTop.id='toTop';
-    toTop.className='hidden fixed bottom-5 right-5 w-11 h-11 rounded-2xl bg-white/10 backdrop-blur border border-white/10 grid place-items-center';
-    toTop.innerHTML=`<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 14l5-5 5 5" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>`;
-    document.body.appendChild(toTop);
-    window.addEventListener('scroll',()=>{window.scrollY>400?toTop.classList.remove('hidden'):toTop.classList.add('hidden')});
-    toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-  </script>
-</body>
-</html>
+      <div class="relative max-w-7xl mx-aut
